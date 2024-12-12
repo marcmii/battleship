@@ -11,6 +11,8 @@ public class battleship {
         int intents = 0;
         boolean vaixellEnfonsat = false;
 
+        System.out.println("Benvingut al Battleship Game!");
+        
         while (!vaixellEnfonsat) {
             System.out.println("  A B C D");
             for (int i = 0; i < 4; i++) {
