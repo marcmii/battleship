@@ -11,7 +11,7 @@ public class battleship {
         int intents = 0;
         boolean vaixellEnfonsat = false;
 
-        System.out.println("Benvingut al Battleship Game!");
+        System.out.println("Bienvenido al Battleship Game!");
         
         while (!vaixellEnfonsat) {
             System.out.println("  A B C D");
@@ -27,7 +27,7 @@ public class battleship {
                 System.out.println();
             }
             System.out.println("");
-            System.out.print("Introdueix una coordenada (ex: B1, A4): ");
+            System.out.print("Introduce una coordenada (ex: B1, A4): ");
             String entrada = in.nextLine().toUpperCase();
             System.out.println("");
             intents++;
@@ -39,17 +39,17 @@ public class battleship {
 
             if (filaIndex >= 0 && filaIndex < 4 && columnaIndex >= 0 && columnaIndex < 4) {
                 if (filaIndex == filaVaixell && columnaIndex == columnaVaixell) {
-                    System.out.println(entrada + " = tocat i enfosat!!  " + intents + " jugades.");
+                    System.out.println(entrada + " = tocado y hundido!!  " + intents + " jugadas.");
                     vaixellEnfonsat = true;
                 } else {
                 	System.out.println("");
-                    System.out.println(entrada + " = AIGUA");
+                    System.out.println(entrada + " = AGUA");
                 }
             } else {
-                System.out.println("Coordenada no vàlida. Prova'n altre.");
+                System.out.println("Coordenada no válida. Prueba otra.");
             }
         }
-        System.out.println("La posició del vaixell era: " + (char)('A' + filaVaixell) + (columnaVaixell + 1));
+        System.out.println("La posicion del barco era: " + (char)('A' + filaVaixell) + (columnaVaixell + 1));
         in.close();
     }
 }
